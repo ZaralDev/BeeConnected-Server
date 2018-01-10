@@ -1,0 +1,4 @@
+26/12/2017 21:29:40 [INFO] Test Log Info
+26/12/2017 21:29:40 [DEBUG] Test Log Debug
+26/12/2017 21:29:40 [ERROR] Test Log Error
+26/12/2017 21:29:40 [WARNING] Test Log Warn
