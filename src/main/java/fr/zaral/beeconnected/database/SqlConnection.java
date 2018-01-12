@@ -9,7 +9,7 @@ public class SqlConnection {
 	/**
      * URL de connection
 	 */
-	private static String url = "jdbc:mysql://localhost:5432/Societe";
+	private static String url = "jdbc:mysql://localhost:5432/BeeConnected";
 	/**
 	 * Nom du user
 	 */
@@ -31,8 +31,7 @@ public class SqlConnection {
 	public static Connection getInstance(){
 		if(connect == null){
 			try {
-
-						connect = DriverManager.getConnection(url, user, passwd);
+				connect = DriverManager.getConnection(url, user, passwd);
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}

@@ -1,4 +1,2 @@
-26/12/2017 21:29:40 [INFO] Test Log Info
-26/12/2017 21:29:40 [DEBUG] Test Log Debug
-26/12/2017 21:29:40 [ERROR] Test Log Error
-26/12/2017 21:29:40 [WARNING] Test Log Warn
+12/01/2018 11:29:43 [INFO] Loading restful api on port 80
+12/01/2018 11:29:44 [INFO] Démarrage du Serveur de BeeConnected

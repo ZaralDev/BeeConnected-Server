@@ -1,5 +1,6 @@
 package fr.zaral.beeconnected;
 
+import fr.zaral.beeconnected.restful.Restful;
 import org.pmw.tinylog.Configurator;
 import org.pmw.tinylog.Level;
 import org.pmw.tinylog.Logger;
@@ -19,6 +20,8 @@ public class Main {
                 .addWriter(new FileWriter("log.txt"))
                 .level(Level.DEBUG) //Active le debug
                 .activate();
+        Restful rest = new Restful(80);
+        rest.listen();
         Logger.info("Démarrage du Serveur de BeeConnected");
 
     }
