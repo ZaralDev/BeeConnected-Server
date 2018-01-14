@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class SqlConnection {
 
-	/**
+    /**
      * URL de connection
 	 */
 	private static String url = "jdbc:mysql://localhost:5432/BeeConnected";
