@@ -7,7 +7,7 @@ import java.io.IOException;
 public class TestRoute extends TestCase {
 
     public void testRoute() {
-        Restful rest = new Restful(80);
+        Restful rest = new Restful(80, null);
         rest.listen();
 
         try {

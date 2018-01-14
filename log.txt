@@ -1,2 +1,6 @@
-12/01/2018 11:29:43 [INFO] Loading restful api on port 80
-12/01/2018 11:29:44 [INFO] Démarrage du Serveur de BeeConnected
+14/01/2018 13:24:47 [INFO] Test Log Info
+14/01/2018 13:24:47 [DEBUG] Test Log Debug
+14/01/2018 13:24:47 [ERROR] Test Log Error
+14/01/2018 13:24:47 [WARNING] Test Log Warn
+14/01/2018 13:24:47 [INFO] Loading restful api on port 80
+14/01/2018 13:24:48 [INFO] Sending 'POST' request to URL : http://localhost:80/api/test
