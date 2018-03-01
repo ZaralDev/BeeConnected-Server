@@ -1,6 +1,9 @@
-14/01/2018 13:24:47 [INFO] Test Log Info
-14/01/2018 13:24:47 [DEBUG] Test Log Debug
-14/01/2018 13:24:47 [ERROR] Test Log Error
-14/01/2018 13:24:47 [WARNING] Test Log Warn
-14/01/2018 13:24:47 [INFO] Loading restful api on port 80
-14/01/2018 13:24:48 [INFO] Sending 'POST' request to URL : http://localhost:80/api/test
+07/02/2018 20:00:43 [INFO] Test Log Info
+07/02/2018 20:00:43 [DEBUG] Test Log Debug
+07/02/2018 20:00:43 [ERROR] Test Log Error
+07/02/2018 20:00:43 [WARNING] Test Log Warn
+07/02/2018 20:00:43 [INFO] Loading restful api on port 80
+07/02/2018 20:00:43 [INFO] [Test] from 127.0.0.1
+07/02/2018 20:00:43 [INFO] [Test] from 127.0.0.1 result: Ok
+07/02/2018 20:00:43 [INFO] Sending 'POST' request to URL : http://localhost:80/api/test
+07/02/2018 20:00:43 [INFO] Ok

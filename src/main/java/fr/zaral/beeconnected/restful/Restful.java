@@ -53,6 +53,7 @@ public class Restful {
         enableCORS("*", "*", "*");
         Spark.get("/api/data", new Data(this));
         Spark.post("/api/postdata", new PostData(this));
+        Spark.post("/api/test", new Test(this));
 
     }
 

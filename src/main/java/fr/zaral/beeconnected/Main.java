@@ -25,7 +25,7 @@ public class Main {
         MongoDBConnection db = new MongoDBConnection(27017);
         db.connect();
 
-        Restful rest = new Restful(3925, db);
+        Restful rest = new Restful(80, db);
         rest.listen();
         Logger.info("Démarrage du Serveur de BeeConnected");
 
