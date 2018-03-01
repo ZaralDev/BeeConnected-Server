@@ -22,8 +22,8 @@ public class Main {
                 .level(Level.TRACE) //Active le debug
                 .activate();
 
-        MongoDBConnection db = new MongoDBConnection(27017, "149.91.88.38");
-        db.connect();
+       MongoDBConnection db = new MongoDBConnection(27017, "149.91.88.38");
+       // db.connect();
 
         Restful rest = new Restful(80, db);
         rest.listen();
