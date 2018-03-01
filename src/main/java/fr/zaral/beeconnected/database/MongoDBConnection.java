@@ -17,15 +17,17 @@ public class MongoDBConnection {
 
 
     private int port;
+    private String ip;
 
-    public MongoDBConnection(int port) {
+    public MongoDBConnection(int port, String ip) {
         Logger.info("Loading database connection...");
         this.port = port;
+        this.ip = ip;
     }
 
 
     public void connect() {
-        mongo = new MongoClient("127.0.0.1", port);
+        mongo = new MongoClient(ip, port);
         MongoDatabase database = mongo.getDatabase(HIVE_DATABASE);
         hiveCollection = new HiveCollection(database.getCollection(HIVE_COLLECTION_NAME));
     }
