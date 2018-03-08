@@ -12,6 +12,7 @@ public class Test  extends IRoute{
         super(restful, "Test");
     }
 
+    //Requête test
     @Override
     protected Object work(Request request, Response response) throws Exception {
         for (String param : request.queryParams()) {
