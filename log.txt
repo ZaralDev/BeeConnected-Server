@@ -1,9 +1,9 @@
-08/03/2018 19:10:00 [INFO] Test Log Info
-08/03/2018 19:10:00 [DEBUG] Test Log Debug
-08/03/2018 19:10:00 [ERROR] Test Log Error
-08/03/2018 19:10:00 [WARNING] Test Log Warn
-08/03/2018 19:10:00 [INFO] Loading restful api on port 27017
-08/03/2018 19:10:01 [INFO] [Test] from 127.0.0.1
-08/03/2018 19:10:01 [INFO] [Test] from 127.0.0.1 result: Ok
-08/03/2018 19:10:01 [INFO] Sending 'POST' request to URL : http://localhost:27017/api/test
-08/03/2018 19:10:01 [INFO] Ok
+10/03/2018 13:35:57 [INFO] Test Log Info
+10/03/2018 13:35:57 [DEBUG] Test Log Debug
+10/03/2018 13:35:57 [ERROR] Test Log Error
+10/03/2018 13:35:57 [WARNING] Test Log Warn
+10/03/2018 13:35:57 [INFO] Loading restful api on port 27017
+10/03/2018 13:35:57 [INFO] [Test] from 127.0.0.1
+10/03/2018 13:35:57 [INFO] [Test] from 127.0.0.1 result: Ok
+10/03/2018 13:35:57 [INFO] Sending 'POST' request to URL : http://localhost:27017/api/test
+10/03/2018 13:35:57 [INFO] Ok

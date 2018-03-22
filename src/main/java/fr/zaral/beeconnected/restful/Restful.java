@@ -45,12 +45,26 @@ public class Restful {
         return mongoDBConnection;
     }
 
+    private static void enableCORS(final String origin, final String methods, final String headers) {
+        before(new Filter() {
+            @Override
+            public void handle(Request request, Response response) {
+                response.header("Access-Control-Allow-Origin", origin);
+                response.header("Access-Control-Request-Method", methods);
+                response.header("Access-Control-Allow-Headers", headers);
+            }
+        });
+    }
+
 
     public void listen() {
         Logger.info("Loading restful api on port " + port);
 
         //On définie le port
         port(port);
+
+        enableCORS("*", "*", "*");
+
         //On créé une url qui va être '/api/data' de type get, Ici on va récupérer les données du serveur, C'est l'objet Data qui va s'occupé du traitement
         //de la requête
         Spark.get("/api/data", new Data(this));
