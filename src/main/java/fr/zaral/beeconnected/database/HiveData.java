@@ -6,11 +6,19 @@ import org.json.JSONObject;
 /**
  * @author Zaral
  */
+
+//HiveData est un objet regroupant les données envoyé en même temps
+//Toutes les données stocké dans cet objet ont donc été envoyé en même temps
+
 public class HiveData {
 
-    private int lum, weight, humidity, temp, id;
+    //Données
+    private int lum, weight, humidity, temp, /*Id de la ruche */id;
+
+    //Date de récupération des données (depuis la ruche)
     private long timestamp;
 
+    //Constructeur: ici sont définies les données
     public HiveData(int lum, int weight, int humidity, int temp, int id, long timestamp) {
         this.lum = lum;
         this.weight = weight;
@@ -20,6 +28,8 @@ public class HiveData {
         this.timestamp = timestamp;
     }
 
+    //Convertie l'objet en Object JSON permettant ainsi de convertir cet objet en universel
+    //Les données pourrons facilement être luent sur d'autres platformes.
     public JSONObject toJson() {
         JSONObject obj = new JSONObject();
         obj.put("lum", lum)

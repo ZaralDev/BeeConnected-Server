@@ -11,6 +11,8 @@ import java.net.URL;
 /**
  * @author Zaral
  */
+
+//Cette classe est utilisée pour les test permettant de simuler une requête venant d'un client
 public class HttpUtils {
 
     public static String sendGet(String url) throws IOException {
@@ -19,10 +21,8 @@ public class HttpUtils {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
-        // optional default is GET
         con.setRequestMethod("GET");
 
-        //add request header
         con.setRequestProperty("User-Agent", "Mozilla/5.0");
 
         int responseCode = con.getResponseCode();
@@ -39,8 +39,6 @@ public class HttpUtils {
         }
         in.close();
 
-        //print result
-        System.out.println("RR" + response.toString());
 
         Logger.info(response.toString());
         return response.toString();
@@ -49,14 +47,12 @@ public class HttpUtils {
     public static String sendPost(String url, String parameters) throws IOException {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        //add reuqest header
         con.setRequestMethod("POST");
         con.setRequestProperty("User-Agent", "Mozilla/5.0");
         con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
         con.setRequestProperty("Content-Type", "application/json");
 
 
-        // Send post request
         con.setDoOutput(true);
         DataOutputStream wr = new DataOutputStream(con.getOutputStream());
         wr.writeBytes(parameters);
@@ -78,7 +74,6 @@ public class HttpUtils {
         }
         in.close();
 
-        //print result
         Logger.info(response.toString());
         return response.toString();
 
