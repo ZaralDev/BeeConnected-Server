@@ -25,7 +25,6 @@ public class Main {
                 .addWriter(new FileWriter("log.txt"))
                 .level(Level.TRACE) //Active le debug
                 .activate();
-
         //Initialisation de la base de donnée MongoDB en local sur le port de la base de donnée (27017)
        MongoDBConnection db = new MongoDBConnection(27017, "127.0.0.1");
        db.connect();
