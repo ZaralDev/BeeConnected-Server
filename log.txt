@@ -1,9 +1,9 @@
-30/03/2018 09:36:08 [INFO] Test Log Info
-30/03/2018 09:36:08 [DEBUG] Test Log Debug
-30/03/2018 09:36:08 [ERROR] Test Log Error
-30/03/2018 09:36:08 [WARNING] Test Log Warn
-30/03/2018 09:36:08 [INFO] Loading restful api on port 27018
-30/03/2018 09:36:08 [INFO] [Test] from 127.0.0.1
-30/03/2018 09:36:08 [INFO] [Test] from 127.0.0.1 result: Ok
-30/03/2018 09:36:08 [INFO] Sending 'POST' request to URL : http://localhost:27018/api/test
-30/03/2018 09:36:08 [INFO] Ok
+02/05/2018 16:22:00 [INFO] Test Log Info
+02/05/2018 16:22:00 [DEBUG] Test Log Debug
+02/05/2018 16:22:00 [ERROR] Test Log Error
+02/05/2018 16:22:00 [WARNING] Test Log Warn
+02/05/2018 16:22:00 [INFO] Loading restful api on port 3925
+02/05/2018 16:22:02 [INFO] [Data] from 127.0.0.1
+02/05/2018 16:22:02 [INFO] [Data] from 127.0.0.1 result: {"reason":"Les parametres ne sont pas définis","success":false}
+02/05/2018 16:22:03 [INFO] Sending 'POST' request to URL : http://localhost:3925/api/postdata
+02/05/2018 16:22:03 [INFO] {"reason":"Les parametres ne sont pas dÃ©finis","success":false}

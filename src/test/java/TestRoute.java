@@ -7,11 +7,11 @@ import java.io.IOException;
 public class TestRoute extends TestCase {
 
     public void testRoute() {
-        Restful rest = new Restful(27018, null);
+        Restful rest = new Restful(3925, null);
         rest.listen();
 
         try {
-            String result = HttpUtils.sendPost("http://localhost:27018/api/test", "");
+            String result = HttpUtils.sendPost("http://localhost:3925/api/postdata", "");
             assertNotNull(result);
         } catch (IOException e) {
             e.printStackTrace();
